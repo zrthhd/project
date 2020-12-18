@@ -96,7 +96,7 @@ while True:
                 break
             accept(conn)
         #read from connections
-        for name, conn in users.items():
+        for name, conn in list(users.items()):
             try:
                 message = conn.recv(1024)
             except socket.error:
