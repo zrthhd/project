@@ -53,9 +53,9 @@ def accept(conn):
                 broadcast(name, "+++ %s arrived +++" % name)
                 break
             #if else if statement
-#    import _thread
+
     _thread.start_new_thread(threaded, ())
- 
+    #function for multithreading 
 def broadcast(name, message):
 #defining broadcast function
     """
